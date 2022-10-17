@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div className="d-flex flex-grow-1">
           <span className="w-100 d-lg-none d-block"></span>
-          <a className="navbar-brand d-sm-inline-block logo" href="#">
+          <a className="navbar-brand d-sm-inline-block" href="#">
             Currency Exchange
           </a>
           <div className="w-100 text-right">
