@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import CurrencyConverter from './components/CurrencyConverter';
 import ExchangeRates from './components/ExchangeRates';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <CurrencyConverter />
       <ExchangeRates />
+      <Footer />
     </div>
   );
 }
