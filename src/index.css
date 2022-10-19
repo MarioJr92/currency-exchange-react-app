@@ -60,3 +60,81 @@
     margin-top: 100px;
   }
 }
+
+.exchange-rates {
+  padding: 20px;
+  margin: 50px 150px;
+  border-radius: 40px;
+}
+
+@media (max-width: 1200px) {
+  .exchange-rates {
+    margin: 50px 7%;
+  }
+}
+
+@media (max-width: 866px) {
+  .exchange-rates {
+    margin: 50px 3%;
+  }
+}
+
+@media (max-width: 576px) {
+  .exchange-rates {
+    margin: 50px 1%;
+  }
+}
+
+.base-currency-box {
+  padding: 15px 10px 8px 0px;
+}
+
+.choose-base-currency {
+  margin-left: 80px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 540px) {
+  .choose-base-currency {
+    margin-left: 0px;
+    margin-right: 5px;
+    font-size: 16px;
+  }
+}
+
+.currency-rates {
+  columns: 3;
+  padding: 30px;
+  margin-left: 50px;
+}
+
+@media (max-width: 744px) {
+  .currency-rates {
+    padding: 5px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 560px) {
+  .currency-rates {
+    padding: 5px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .currency-rates {
+    padding: 2px;
+    margin-left: 10px;
+    columns: 2;
+  }
+}
+
+@media (max-width: 340px) {
+  .currency-rates {
+    padding: 2px;
+    margin-left: 50px;
+    columns: 1;
+  }
+}
