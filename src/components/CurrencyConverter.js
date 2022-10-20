@@ -27,7 +27,7 @@ class CurrencyConventer extends React.Component {
   }
 
   handleChange(event) {
-    fetch(`https://api.frankfurter.app/latest?from${this.state.fromCurrency}`)
+    fetch(`https://api.frankfurter.app/latest?from=${this.state.fromCurrency}`)
       .then((res) => res.json())
       .then((data) => {
         this.setState({
