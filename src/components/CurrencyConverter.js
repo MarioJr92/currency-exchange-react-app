@@ -27,21 +27,27 @@ class CurrencyConventer extends React.Component {
   }
 
   handleChange(event) {
-    fetch(`https://api.frankfurter.app/latest?from=${this.state.fromCurrency}`)
-      .then((res) => res.json())
-      .then((data) => {
-        this.setState({
-          rates: data.rates,
-          exchangeRate: data.rates[this.state.toCurrency],
-          showResults: true,
-        });
-      });
-
     const { name, value } = event.target;
-    this.setState({
-      [name]: value,
-    });
+    this.setState(
+      {
+        [name]: value,
+      },
+      () => {
+        if (this.state.fromCurrency && this.state.toCurrency) {
+          fetch(`https://api.frankfurter.app/latest?from=${this.state.fromCurrency}&to=${this.state.toCurrency}`)
+            .then((res) => res.json())
+            .then((data) => {
+              this.setState({
+                rates: data.rates,
+                exchangeRate: data.rates[this.state.toCurrency],
+                showResults: true,
+              });
+            });
+        }
+      }
+    );
   }
+
 
   render() {
     const { currencies, fromCurrency, toCurrency, amount, exchangeRate } = this.state;
