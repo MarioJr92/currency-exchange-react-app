@@ -5,7 +5,7 @@ class ExchangeRates extends React.Component {
     super();
     this.state = {
       amount: 1,
-      baseCurrency: "GBP",
+      baseCurrency: "EUR",
       rates: [],
       currencies: [],
     };
@@ -16,9 +16,11 @@ class ExchangeRates extends React.Component {
     fetch(`https://api.frankfurter.app/latest`)
       .then(res => res.json())
       .then(data => {
+        const currencyArr = [data.base, ...Object.keys(data.rates)];
+        currencyArr.sort();
         this.setState({
           rates: data.rates,
-          currencies: Object.keys(data.rates).sort(),
+          currencies: currencyArr,
         });
       });
   }
