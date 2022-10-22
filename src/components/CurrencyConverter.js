@@ -5,7 +5,7 @@ class CurrencyConventer extends React.Component {
     super();
     this.state = {
       amount: " ",
-      fromCurrency: "GBP",
+      fromCurrency: "EUR",
       toCurrency: "USD",
       rates: [],
       currencies: [],
