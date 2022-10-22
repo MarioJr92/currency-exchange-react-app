@@ -20,9 +20,9 @@ class CurrencyConventer extends React.Component {
     fetch("https://api.frankfurter.app/latest")
       .then((res) => res.json())
       .then((data) => {
-        this.setState({
-          currencies: Object.keys(data.rates).sort(),
-        });
+        const currencyArr = [data.base, ...Object.keys(data.rates)];
+        currencyArr.sort();
+        this.setState({ currencies: currencyArr });
       });
   }
 
