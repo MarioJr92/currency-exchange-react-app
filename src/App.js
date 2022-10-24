@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import CurrencyConverter from './components/CurrencyConverter';
 import ExchangeRates from './components/ExchangeRates';
+import HistoricalChart from './components/HistoricalChart';
 import Footer from './components/Footer';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <CurrencyConverter />
       <ExchangeRates />
+      <HistoricalChart />
       <Footer />
     </div>
   );
