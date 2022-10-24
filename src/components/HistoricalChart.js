@@ -116,7 +116,7 @@ class HistoricalChart extends React.Component {
     ));
 
     return (
-      <div className="container">
+      <div className="historical-chart border" id="historicalChart">
         <div className="row">
           <div className="col-12">
             <h1 className="text-center">Historical Chart</h1>

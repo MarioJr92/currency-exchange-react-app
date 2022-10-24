@@ -18,6 +18,7 @@ const Navbar = () => {
               <Dropdown.Menu>
                 <Dropdown.Item href="#currencyConverter">Currency Converter</Dropdown.Item>
                 <Dropdown.Item href="#exchangeRates">Exchange Rates</Dropdown.Item>
+                <Dropdown.Item href="#historicalChart">Historical Chart</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -32,6 +33,11 @@ const Navbar = () => {
             <li className="nav-item">
               <a href="#exchangeRates" className="nav-link m-2 menu-item">
                 Exchange Rates
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#historicalChart" className="nav-link m-2 menu-item">
+                Historical Chart
               </a>
             </li>
           </ul>
